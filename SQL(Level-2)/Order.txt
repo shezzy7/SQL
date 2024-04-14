@@ -1,0 +1,7 @@
+General order for writing clauses:-
+			SELECT column(s)
+			FROM tableName
+			WHERE condition
+			GROUP BY cols
+			HAVING condition
+			ORDER BY columns ASC/DESC;

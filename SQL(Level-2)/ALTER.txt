@@ -1,0 +1,46 @@
+ALTER :- Alter command is used to change the schema.Mean with the help of it we can add new columns to the table ,we can update value of columns,type of column
+	,we can change type of column,we can drop any column completely and we can rename our table.
+	
+	1-Add column:-We can add any column in table 
+		Syntax: ALTER tableName ADD colName dataType Constraint;
+		Example: 
+			CREATE TABLE user(id int ,name varchar(30),age int,email varchar(50),followers int,following int);
+			INSERT INTO user VALUES(1,"Shahzad",21,"shezzy@gmail.com",150,10),(2,"goodo",19,"Zaini@gmail.com",160,5),
+			(3,"Chooti goodo",19,"simleyGirl@gamil.com",250,15),(4,"Deeja",20,"writer@gmail.com",175,18);
+			SELECT * FROM user;
+			--let we want to add a column for cgpa and assign them default value of 3.9
+			ALTER TABLE user ADD COLUMN cgpa float DEFAULT 3.9;
+			--now lets print the table
+			SELECT * FROM user;
+
+	2-DROP column:-We can drp any existing clumn from the table
+		Syntax: ALTER tableName DROP COLUMN colName;
+		Example: 
+			CREATE TABLE user(id int ,name varchar(30),age int,email varchar(50),followers int,following int);
+			INSERT INTO user VALUES(1,"Shahzad",21,"shezzy@gmail.com",150,10),(2,"goodo",19,"Zaini@gmail.com",160,5),
+			(3,"Chooti goodo",19,"simleyGirl@gamil.com",250,15),(4,"Deeja",20,"writer@gmail.com",175,18);
+			SELECT * FROM user;
+			--let we want to add a column for cgpa and assign them default value of 3.9
+			ALTER TABLE user ADD COLUMN cgpa float DEFAULT 3.9;
+			--now lets print the table
+			SELECT * FROM user; 
+			--lets remove the newly added column cgpa from the table and print the table
+			ALTER TABLE user DROP COLUMN cgpa;
+
+	3-RENAME table:-We can change the name of out table
+		Synatx: ALTER TABLE tabName RENAME TO newName;
+		Example: 
+			CREATE TABLE user(id int ,name varchar(30),age int,email varchar(50),followers int,following int);
+			INSERT INTO user VALUES(1,"Shahzad",21,"shezzy@gmail.com",150,10),(2,"goodo",19,"Zaini@gmail.com",160,5),
+			(3,"Chooti goodo",19,"simleyGirl@gamil.com",250,15),(4,"Deeja",20,"writer@gmail.com",175,18);
+			SELECT * FROM user;
+			--let we want to add a column for cgpa and assign them default value of 3.9
+			ALTER TABLE user ADD COLUMN cgpa float DEFAULT 3.9;
+			--now lets print the table
+			SELECT * FROM user; 
+			--lets remove the newly added column cgpa from the table and 
+			ALTER TABLE user DROP COLUMN cgpa;
+			SELECT * FROM user;
+			--lets change the name of our table from user to warriors and print it by its new name
+			ALTER TABLE user RENAME TO warriors;
+			SELECT * FROM warriors;
