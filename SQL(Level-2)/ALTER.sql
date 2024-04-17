@@ -5,7 +5,7 @@
 -- 		Example: 
 			DROP TABLE IF EXISTS user1;
 			CREATE TABLE user1(id int ,name varchar(30),age int,email varchar(50),followers int,following int);
-			INSERT INTO user1 VALUES(1,"shezzy",21,"shezzy@gmail.com",150,10),(2,"goodo",19,"Zaini@gmail.com",160,5),
+			INSERT INTO user1 VALUES(1,"Shahzad",21,"shezzy@gmail.com",150,10),(2,"goodo",19,"Zaini@gmail.com",160,5),
 			(3,"Chooti goodo",19,"simleyGirl@gamil.com",250,15),(4,"Deeja",20,"writer@gmail.com",175,18);
 			SELECT * FROM user1;
 			--let we want to add a column for cgpa and assign them default value of 3.9
@@ -22,7 +22,7 @@
 	-- 	Syntax: ALTER tableName DROP COLUMN colName;
 	-- 	Example: 
 			CREATE TABLE user2(id int ,name varchar(30),age int,email varchar(50),followers int,following int);
-			INSERT INTO user2 VALUES(1,"shezzy",21,"shezzy@gmail.com",150,10),(2,"goodo",19,"Zaini@gmail.com",160,5),
+			INSERT INTO user2 VALUES(1,"Shahzad",21,"shezzy@gmail.com",150,10),(2,"goodo",19,"Zaini@gmail.com",160,5),
 			(3,"Chooti goodo",19,"simleyGirl@gamil.com",250,15),(4,"Deeja",20,"writer@gmail.com",175,18);
 			SELECT * FROM user2;
 			--let we want to add a column for cgpa and assign them default value of 3.9
@@ -65,14 +65,13 @@
 			SELECT * FROM user3;
 
 	-- 5-MODIFY COLUMN(change dataType,constraints):-we can also change any column's dataType,and its constraint
-	-- Syntax-> ALTER TABLE tableName MODIFY COLUMN old_colName TO new_colName;
+	-- Syntax-> ALTER TABLE tableName MODIFY COLUMN colName new_dataType newConstraint;
 	-- 	Example: 
 			CREATE TABLE user3(id int ,name varchar(30),age int,email varchar(50),followers int,following int);
 			INSERT INTO user3 VALUES(1,"Shahzad",21,"shezzy@gmail.com",150,10),(2,"goodo",19,"Zaini@gmail.com",160,5),
 			(3,"Chooti goodo",19,"simleyGirl@gamil.com",250,15),(4,"Deeja",20,"writer@gmail.com",175,18);
 			SELECT * FROM user3;
-			--lets change the name of id to sr
-			ALTER TABLE user3 CHANGE COLUMN id TO sr;
-			SELECT sr FROM user3;
+			--let we want to change the type of age from int to float and set a constraint for it 
+			ALTER TABLE user3 MODIFY COLUMN age float default 18;
 			SELECT * FROM user3;
 

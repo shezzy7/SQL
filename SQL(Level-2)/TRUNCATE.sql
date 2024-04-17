@@ -6,6 +6,6 @@
   		INSERT INTO employee VALUES('E001','Ali Ahmad','Ahmad Hassan',27,70000,'D003'),('E002','Sana Javed','Javed Ahmad',21,60000,'D001'),
 	   	('E003','Kamran Ali','Ali Ahmad',24,75000,'D002'),('E004','Kashif Ali','Ali Kamran',25,80000,'D001'),('E005','Hina Munir','Munir
  	   	Ahamad',22,65000,'D004'),('E006','Hamna Ali','Hassan Ali',27,75000,'D002'),('E007','Obaid Ali','Ali Ahmad',32,90000,'D001');
-        SELECT * FROM employee;
-        TRUNCATE TABLE employee;
-        SELECT * FROM employee;
+		TRUNCATE TABLE employee;
+
+		

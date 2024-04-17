@@ -7,6 +7,8 @@ SELECT * FROM user;
 SELECT * FROM user WHERE age>20;
 SELECT name FROM user WHERE followers >= 155;
 SELECT followers,following,email FROM user WHERE following<=13;
---adding two conditions together 
+
 UPDATE user SET name="shezzy" WHERE name="shahzad";
 SELECT * FROM user;
+--we can set multiple conditions in where clause
+SELECT * FROM user WHERE age>18 AND followers<170;

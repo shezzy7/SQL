@@ -1,6 +1,4 @@
--- Online SQL Editor to Run SQL Online.
--- Use the editor to create new tables, insert data and all other SQL operations.
-  DROP TABLE user;
+
 CREATE TABLE user(id int ,name varchar(30),age int,email varchar(50),followers int,following int);
 INSERT INTO user VALUES(1,"shahzad",20,"shezzy@gmail.com",150,10),(2,"goodo",17,"Zaini@gmail.com",160,5),(3,"Chooti goodo",15,"simleyGirl@gamil.com",175,16),(4,"Deeja",20,"writer@gmail.com",175,18),(5,"Mooti",18,"aii@gmail.com",160,25);
 SELECT * FROM user;
