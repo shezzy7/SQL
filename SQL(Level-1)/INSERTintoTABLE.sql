@@ -1,5 +1,5 @@
-For inserting values in table we use following synatx->		INSERT INTO tableName(colName1,colName2....) VALUES(value1,value2...);
-//code
+--For inserting values in table we use following synatx->		INSERT INTO tableName(colName1,colName2....) VALUES(value1,value2...);
+--code
 CREATE TABLE post(id int,content varchar(50),userid int);
 --there are three ways of putting data in the table
 --for adding valus only into specific columns

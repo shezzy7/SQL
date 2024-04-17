@@ -1,7 +1,7 @@
-UPDATE :- it is used to update any existing row.
-	Syntax ->		UPDATE tabName SET col1=value,col2=value WHERE condition;
-	Exaple:- 
-		We have a table 
+-- UPDATE :- it is used to update any existing row.
+-- 	Syntax ->		UPDATE tabName SET col1=value,col2=value WHERE condition;
+-- 	Exaple:- 
+-- 		We have a table 
   		CREATE TABLE employee(empId char(4),empName varchar(30),empFName varchar(30),empAge int,empSal int,empDept char(4));
   		INSERT INTO employee VALUES('E001','Ali Ahmad','Ahmad Hassan',27,70000,'D003'),('E002','Sana Javed','Javed Ahmad',21,60000,'D001'),
 	   	('E003','Kamran Ali','Ali Ahmad',24,75000,'D002'),('E004','Kashif Ali','Ali Kamran',25,80000,'D001'),('E005','Hina Munir','Munir Ahamad',22,65000,
