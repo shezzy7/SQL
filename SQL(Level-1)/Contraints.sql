@@ -4,9 +4,7 @@
 -- 	1-NOT NULL:- It is used when we want that any declared atribute/column should never be empty.It must contain some value like userName ont instagram etc.
 -- 			Syntax-> varName dataType NOT NULL 
 -- 			eg. Let we want to create a table employee in which we create a attribute email and want that email of everyOne in the company must give a email 
- --DROP TABLE employee3;
---DROP TABLE employee4;
- --DROP TABLE employee6;
+ 
 
 
 
