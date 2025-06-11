@@ -1,5 +1,5 @@
 -- ORDER BY Clause:-
--- 		It is used to sort in ascending(ASC) or descending clause(DESC)
+-- 		It is used to sort in ascending(ASC) or descending order(DESC)
 -- 	Syntax -> SELECT col1,col2 FROM tableName ORDER BY col_name(s) (ASC or DESC);
 -- 	Example:- 
 -- 		Let suppose we have a table of users in data in which we want to sort our rows according to their ages in ascending order
