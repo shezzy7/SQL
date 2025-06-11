@@ -1,4 +1,4 @@
--- TRUNCATE :- it's a command used to delete data of whole table.Mean instead of dropeing ouur table we want to reset our table data then we can use this command 
+-- TRUNCATE :- it's a command used to delete data of whole table.Mean instead of dropeing our table if we want to reset our table data then we can use this command.It will make our table's data empty instead of deleting out table from database. 
 -- syntax-> TRUNCATE TABLE tableName;
 -- example:-
     
