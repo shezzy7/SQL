@@ -60,7 +60,7 @@
 			(3,"Chooti goodo",19,"simleyGirl@gamil.com",250,15),(4,"Deeja",20,"writer@gmail.com",175,18);
 			SELECT * FROM user3;
 			--lets change the name of id to sr
-			ALTER TABLE user3 CHANGE COLUMN id TO sr;
+			ALTER TABLE user3 RENAME COLUMN id TO sr;
 			SELECT sr FROM user3;
 			SELECT * FROM user3;
 
